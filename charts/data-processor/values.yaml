@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: busybox
+  tag: latest
+
+namespace: bosster-test
+
+env:
+  DB_HOST: "bosster-test-aurora.cluster-ro-crio00c4sjtt.eu-west-1.rds.amazonaws.com:5432"
+  INPUT_QUEUE: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-analytics"
+  OUTPUT_BUCKET: "bosster-test-data-460474851007"
+  AWS_REGION: "eu-west-1"

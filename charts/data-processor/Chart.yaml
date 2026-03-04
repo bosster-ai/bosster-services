@@ -1,0 +1,5 @@
+apiVersion: v2
+name: data-processor
+description: Data processing service for Bosster platform
+version: 0.1.0
+appVersion: "1.0.0"

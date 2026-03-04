@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: busybox
+  tag: latest
+
+namespace: bosster-test
+
+env:
+  DB_HOST: "bosster-test-aurora.cluster-crio00c4sjtt.eu-west-1.rds.amazonaws.com:5432"
+  DB_NAME: "api_db"
+  DB_USER: "app_user"
+  REDIS_URL: "redis://master.bosster-test-redis.p5cflu.euw1.cache.amazonaws.com:6379"
+  QUEUE_URL: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-orders"
+  # INTENTIONAL DRIFT: This queue does not exist in the deployed infrastructure
+  ANALYTICS_QUEUE_URL: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-analytics-v2"
