@@ -11,3 +11,5 @@ env:
   INPUT_QUEUE: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-analytics"
   OUTPUT_BUCKET: "bosster-test-data-460474851007"
   AWS_REGION: "eu-west-1"
+  # INTENTIONAL DRIFT: pending_deploy — Git declares this queue but K8s doesn't use it yet
+  EVENT_QUEUE: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-notifications"

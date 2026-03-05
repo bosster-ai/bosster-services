@@ -9,6 +9,5 @@ namespace: bosster-test
 env:
   DB_HOST: "bosster-test-aurora.cluster-crio00c4sjtt.eu-west-1.rds.amazonaws.com:5432"
   RAW_BUCKET: "bosster-test-uploads-460474851007"
-  QUEUE_URL: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-analytics"
-  # INTENTIONAL DRIFT: deployed has eu-west-1, Git says us-east-1
-  S3_REGION: "us-east-1"
+  # INTENTIONAL DRIFT: deployed uses bosster-test-analytics, Git says bosster-test-orders
+  QUEUE_URL: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-orders"
