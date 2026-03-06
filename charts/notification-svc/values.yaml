@@ -10,3 +10,4 @@ env:
   QUEUE_URL: "https://sqs.eu-west-1.amazonaws.com/460474851007/bosster-test-notifications"
   REDIS_URL: "redis://master.bosster-test-redis.p5cflu.euw1.cache.amazonaws.com:6379"
   # INTENTIONAL DRIFT: SMTP_HOST is deployed but intentionally omitted from Git
+  # INTENTIONAL DRIFT: BACKUP_BUCKET is deployed but intentionally omitted from Git
